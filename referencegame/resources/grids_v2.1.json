@@ -1,0 +1,34 @@
+{
+  "letter_grids": [
+    "X X X X X\nX X □ X X\nX X X X X\nX X □ X X\nX X X X X",
+    "X X X X X\nX □ □ □ □\nX □ □ □ □\nX □ □ □ □\nX X X X X",
+    "X X X X X\nX X □ □ □\nX X X X X\nX X □ □ □\nX X X X X",
+    "X X X X X\nX □ □ □ □\nX X X □ □\nX □ □ □ □\nX □ □ □ □",
+    "X □ □ □ X\nX X X X X\nX X X X X\nX X X X X\nX □ □ □ X",
+    "X X X X X\nX □ □ □ X\nX X X X X\nX X □ □ □\nX X □ □ □"
+  ],
+  "number_grids": [
+    "X X X X □\n□ □ □ X □\nX X X X □\nX □ □ □ □\nX X X X X",
+    "X X X X X\n□ □ □ X □\nX X X X X\n□ □ □ X □\nX X X X X",
+    "X □ □ X X\nX □ □ X X\nX X X X X\n□ □ □ X X\n□ □ □ X X",
+    "X X X X X\nX □ □ □ □\nX X X X □\n□ □ □ X □\nX X X X □",
+    "X X X X X\nX □ □ □ □\nX X X X X\nX □ □ □ X\nX X X X X",
+    "X X X X X\n□ □ □ X □\n□ □ □ X □\n□ □ □ X □\n□ □ □ X □"
+  ],
+  "random_grids": [
+    "X □ X □ X\n□ X X X □\nX X □ X X\n□ X X X □\nX □ X □ X",
+    "□ X X X □\nX □ X □ X\nX X □ X X\nX □ X □ X\n□ X X X □",
+    "X □ X X X\nX X X □ X\nX X □ X X\nX X X □ X\nX □ X X X",
+    "X X □ X X\nX □ □ X X\nX X X X □\n□ X X X X\nX X X X X",
+    "X □ X □ □\nX □ □ □ X\nX □ □ X X\n□ X □ □ X\nX □ X X X",
+    "X X X X X\nX X X □ X\n□ □ □ X X\n□ □ □ □ X\nX □ X X X"
+  ],
+  "symbol_grids":[
+    "X X X X X\n□ □ X □ □\n□ □ X □ □\n□ □ X □ □\n□ □ □ □ □",
+    "X □ □ □ X\n□ □ X □ □\n□ X □ X □\n□ X □ X □\n□ □ □ □ □",
+    "X □ □ □ X\nX X X X X\nX □ □ □ X\nX X X X X\n□ □ □ □ □",
+    "X □ □ □ X\n□ □ X □ □\nX □ □ □ X\n□ □ □ □ □\nX X X X X",
+    "X □ □ □ X\n□ □ X □ □\n□ X □ X □\n□ □ □ □ □\n□ X □ X □",
+    "X X X X X\n□ □ X □ □\n□ □ X □ □\n□ □ □ □ □\n□ □ X □ □"
+  ]
+}
