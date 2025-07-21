@@ -9,7 +9,10 @@ MULTILINGUAL_PATTERNS = {"ar":
                               "p2_tag": 'antwort:'
                               },
                          "en":
-                             {"p2_options": 'first|second|third',
+                             {"p2_options": [
+                                 ['First','first', '1.', '1st'],
+                                 ['Second', 'second', '2.', '2nd'],
+                                 ['Third', 'third', '3.', '3rd']],
                               "p1_tag": 'expression:',
                               "p2_tag": 'answer:'},
                          "it":
