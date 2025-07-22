@@ -24,11 +24,10 @@
     "X X X X X\nX X X □ X\n□ □ □ X X\n□ □ □ □ X\nX □ X X X"
   ],
   "symbol_grids":[
-    "X X X X X\n□ □ X □ □\n□ □ X □ □\n□ □ X □ □\n□ □ □ □ □",
-    "X □ □ □ X\n□ □ X □ □\n□ X □ X □\n□ X □ X □\n□ □ □ □ □",
-    "X □ □ □ X\nX X X X X\nX □ □ □ X\nX X X X X\n□ □ □ □ □",
-    "X □ □ □ X\n□ □ X □ □\nX □ □ □ X\n□ □ □ □ □\nX X X X X",
-    "X □ □ □ X\n□ □ X □ □\n□ X □ X □\n□ □ □ □ □\n□ X □ X □",
-    "X X X X X\n□ □ X □ □\n□ □ X □ □\n□ □ □ □ □\n□ □ X □ □"
+    "X X X X X\nX □ □ □ X\nX □ □ □ X\nX □ □ □ X\nX □ □ □ X\nX X X X X\n",
+    "□ □ X □ □\n□ □ X □ □\nX X X X X\n□ □ X □ □\n□ □ X □ □\n□ □ X □ □\n",
+    "□ □ X □ □\n□ X □ X □\nX □ □ □ X\nX □ □ □ X\n□ X □ X □\n□ □ X □ □\n",
+    "□ □ X □ □\n□ X □ X □\nX X X X X\n□ □ □ □ □\n□ □ □ □ □\n□ □ □ □ □\n",
+    "□ □ □ □ □\n□ □ □ □ □\n□ □ □ □ □\nX X X X X\n□ X □ X □\n□ □ X □ □"
   ]
 }

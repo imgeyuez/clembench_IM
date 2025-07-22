@@ -13,13 +13,16 @@ import os
 import Levenshtein # to calculate distance between grids
 
 from clemcore.clemgame import GameInstanceGenerator
+import random
+from collections import defaultdict
 
-from referencegame.resources.localization_utils import MULTILINGUAL_PATTERNS
+from resources.localization_utils import MULTILINGUAL_PATTERNS
 
 logger = logging.getLogger(__name__)
+random.seed(42)
 
 VERSION = "v2.1"
-GRIDS = "clembench/referencegame/resources/grids_v2.1.json"
+GRIDS = r"C:\Users\imgey\Desktop\MASTERS\MASTER_POTSDAM\SoSe25\IM\codespace\clembench_IM\referencegame\resources\grids_v2.1.json"
 P1_MODE = "strict"  # "liberal"
 P2_MODE = "strict"  # "liberal"
 # modes relate to regex parsing:
@@ -138,9 +141,14 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
             player_b_prompt_header = self.load_template(f"resources/initial_prompts/"
                                                         f"{self.lang}/player_b_prompt_header.template")
 
+            # experiment = self.add_experiment(f"{grids_group}")
+
+            # game_counter = 0
+
             all_instances = []
-            
+
             for sample_id, sample in enumerate(samples):
+                
                 # create three instances from each triplet, where the target for player 2 is in
                 # one of the three possible positions each (selecting one order for the other two)
                 for i in [1, 2, 3]:
@@ -148,12 +156,12 @@ class ReferenceGameInstanceGenerator(GameInstanceGenerator):
 
                     instance_data = {}
 
-                    game_instance["player_1_prompt_header"] = player_a_prompt_header.replace('TARGET_GRID', target_grid)\
+                    instance_data["player_1_prompt_header"] = player_a_prompt_header.replace('TARGET_GRID', target_grid)\
                                                                                     .replace('SECOND_GRID', second_grid)\
                                                                                     .replace('THIRD_GRID', third_grid)
-                    game_instance['player_1_target_grid'] = target_grid
-                    game_instance['player_1_second_grid'] = second_grid
-                    game_instance['player_1_third_grid'] = third_grid
+                    instance_data['player_1_target_grid'] = target_grid
+                    instance_data['player_1_second_grid'] = second_grid
+                    instance_data['player_1_third_grid'] = third_grid
 
                     # create order of grids for player 2
                     # extract target grid names from localization_utils
